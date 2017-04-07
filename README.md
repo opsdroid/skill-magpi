@@ -1,6 +1,6 @@
-# opsdroid skill hello
+# opsdroid skill magpi
 
-A skill for [opsdroid](https://github.com/opsdroid/opsdroid) to respond to hello and goodbye messages.
+A skill for [opsdroid](https://github.com/opsdroid/opsdroid) to notify of new [MagPi](https://www.raspberrypi.org/magpi/) issues.
 
 ## Requirements
 
@@ -8,25 +8,28 @@ None.
 
 ## Configuration
 
-None.
+```yaml
+skills:
+  - name: magpi
+    room: "#raspberrypi"  # (Optional) room to send notifications to
+```
 
 ## Usage
 
-#### `hello`
+#### default
 
-Says hello to the user.
+This skill checks every hour for new issues of MagPi.
 
-> user: hello
+> opsdroid: There's a new issue of MagPi:
+>           https://www.raspberrypi.org/magpi-issues/MagPi56.pdf
+
+#### `magpi <number>`
+
+Get the link to an issue by number.
+
+> user: What's the link to magpi 42?
 >
-> opsdroid: Hi user
-
-#### `goodbye`
-
-Says goodbye to the user.
-
-> user: bye
->
-> opsdroid: Bye user
+> opsdroid: https://www.raspberrypi.org/magpi-issues/MagPi42.pdf
 
 ## License
 

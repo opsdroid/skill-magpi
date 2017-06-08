@@ -4,6 +4,7 @@ import logging
 from bs4 import BeautifulSoup
 
 from opsdroid.matchers import match_regex, match_crontab
+from opsdroid.message import Message
 
 
 _LOGGER = logging.getLogger(__name__)

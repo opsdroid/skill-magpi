@@ -30,7 +30,3 @@ Get the link to an issue by number.
 > user: What's the link to magpi 42?
 >
 > opsdroid: https://www.raspberrypi.org/magpi-issues/MagPi42.pdf
-
-## License
-
-GNU General Public License Version 3 (GPLv3)
